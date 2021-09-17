@@ -51,7 +51,7 @@
       content="Excalidraw is a whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them."
     />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <meta name="version" content="2021-08-30T08:46:44Z-5da32076" />
+    <meta name="version" content="{version}" />
     <link
       rel="preload"
       href="Virgil.woff2"
@@ -147,7 +147,10 @@
         user-select: auto;
       }
     </style>
-    <link href="./static/css/main.91bb8feb.chunk.css" rel="stylesheet" />
+    <link
+      href="/excalidraw/static/css/main.91bb8feb.chunk.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -159,39 +162,39 @@
       !(function (n) {
         function e(e) {
           for (
-            var r, a, c = e[0], s = e[1], f = e[2], d = 0, l = [];
+            var r, i, c = e[0], s = e[1], f = e[2], d = 0, l = [];
             d < c.length;
             d++
           )
-            (a = c[d]),
-              Object.prototype.hasOwnProperty.call(t, a) &&
-                t[a] &&
-                l.push(t[a][0]),
-              (t[a] = 0);
+            (i = c[d]),
+              Object.prototype.hasOwnProperty.call(t, i) &&
+                t[i] &&
+                l.push(t[i][0]),
+              (t[i] = 0);
           for (r in s)
             Object.prototype.hasOwnProperty.call(s, r) && (n[r] = s[r]);
           for (u && u(e); l.length; ) l.shift()();
-          return i.push.apply(i, f || []), o();
+          return a.push.apply(a, f || []), o();
         }
         function o() {
-          for (var n, e = 0; e < i.length; e++) {
-            for (var o = i[e], r = !0, c = 1; c < o.length; c++) {
+          for (var n, e = 0; e < a.length; e++) {
+            for (var o = a[e], r = !0, c = 1; c < o.length; c++) {
               var s = o[c];
               0 !== t[s] && (r = !1);
             }
-            r && (i.splice(e--, 1), (n = a((a.s = o[0]))));
+            r && (a.splice(e--, 1), (n = i((i.s = o[0]))));
           }
           return n;
         }
         var r = {},
           t = { 45: 0 },
-          i = [];
-        function a(e) {
+          a = [];
+        function i(e) {
           if (r[e]) return r[e].exports;
           var o = (r[e] = { i: e, l: !1, exports: {} });
-          return n[e].call(o.exports, o, o.exports, a), (o.l = !0), o.exports;
+          return n[e].call(o.exports, o, o.exports, i), (o.l = !0), o.exports;
         }
-        (a.e = function (n) {
+        (i.e = function (n) {
           var e = [],
             o = t[n];
           if (0 !== o)
@@ -201,14 +204,14 @@
                 o = t[n] = [e, r];
               });
               e.push((o[2] = r));
-              var i,
+              var a,
                 c = document.createElement("script");
               (c.charset = "utf-8"),
                 (c.timeout = 120),
-                a.nc && c.setAttribute("nonce", a.nc),
+                i.nc && c.setAttribute("nonce", i.nc),
                 (c.src = (function (n) {
                   return (
-                    a.p +
+                    i.p +
                     "static/js/" +
                     ({
                       2: "bug-issue-template",
@@ -302,9 +305,9 @@
                       42: "e2c5666c",
                       44: "c95f20ce",
                       46: "f08d1b35",
-                      47: "0f205db6",
+                      47: "65a6b4da",
                       49: "db14cbd4",
-                      50: "f242ace6",
+                      50: "af9467ce",
                       51: "643757c6",
                       52: "c3c1706b",
                       53: "a081839a",
@@ -320,59 +323,59 @@
                   );
                 })(n));
               var s = new Error();
-              i = function (e) {
+              a = function (e) {
                 (c.onerror = c.onload = null), clearTimeout(f);
                 var o = t[n];
                 if (0 !== o) {
                   if (o) {
                     var r = e && ("load" === e.type ? "missing" : e.type),
-                      i = e && e.target && e.target.src;
+                      a = e && e.target && e.target.src;
                     (s.message =
                       "Loading chunk " +
                       n +
                       " failed.\n(" +
                       r +
                       ": " +
-                      i +
+                      a +
                       ")"),
                       (s.name = "ChunkLoadError"),
                       (s.type = r),
-                      (s.request = i),
+                      (s.request = a),
                       o[1](s);
                   }
                   t[n] = void 0;
                 }
               };
               var f = setTimeout(function () {
-                i({ type: "timeout", target: c });
+                a({ type: "timeout", target: c });
               }, 12e4);
-              (c.onerror = c.onload = i), document.head.appendChild(c);
+              (c.onerror = c.onload = a), document.head.appendChild(c);
             }
           return Promise.all(e);
         }),
-          (a.m = n),
-          (a.c = r),
-          (a.d = function (n, e, o) {
-            a.o(n, e) ||
+          (i.m = n),
+          (i.c = r),
+          (i.d = function (n, e, o) {
+            i.o(n, e) ||
               Object.defineProperty(n, e, { enumerable: !0, get: o });
           }),
-          (a.r = function (n) {
+          (i.r = function (n) {
             "undefined" != typeof Symbol &&
               Symbol.toStringTag &&
               Object.defineProperty(n, Symbol.toStringTag, { value: "Module" }),
               Object.defineProperty(n, "__esModule", { value: !0 });
           }),
-          (a.t = function (n, e) {
-            if ((1 & e && (n = a(n)), 8 & e)) return n;
+          (i.t = function (n, e) {
+            if ((1 & e && (n = i(n)), 8 & e)) return n;
             if (4 & e && "object" == typeof n && n && n.__esModule) return n;
             var o = Object.create(null);
             if (
-              (a.r(o),
+              (i.r(o),
               Object.defineProperty(o, "default", { enumerable: !0, value: n }),
               2 & e && "string" != typeof n)
             )
               for (var r in n)
-                a.d(
+                i.d(
                   o,
                   r,
                   function (e) {
@@ -381,7 +384,7 @@
                 );
             return o;
           }),
-          (a.n = function (n) {
+          (i.n = function (n) {
             var e =
               n && n.__esModule
                 ? function () {
@@ -390,13 +393,13 @@
                 : function () {
                     return n;
                   };
-            return a.d(e, "a", e), e;
+            return i.d(e, "a", e), e;
           }),
-          (a.o = function (n, e) {
+          (i.o = function (n, e) {
             return Object.prototype.hasOwnProperty.call(n, e);
           }),
-          (a.p = "./"),
-          (a.oe = function (n) {
+          (i.p = "/excalidraw/"),
+          (i.oe = function (n) {
             throw (console.error(n), n);
           });
         var c = (this.webpackJsonpexcalidraw =
@@ -408,7 +411,7 @@
         o();
       })([]);
     </script>
-    <script src="./static/js/48.9f070412.chunk.js"></script>
-    <script src="./static/js/main.7d731dae.chunk.js"></script>
+    <script src="/excalidraw/static/js/48.9f070412.chunk.js"></script>
+    <script src="/excalidraw/static/js/main.e13266ad.chunk.js"></script>
   </body>
 </html>
